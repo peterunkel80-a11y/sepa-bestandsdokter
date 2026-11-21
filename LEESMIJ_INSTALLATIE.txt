@@ -1,0 +1,34 @@
+SEPA BESTANDSDOKTER – INSTALLATIE OP MEERDERE APPARATEN
+
+Deze map bevat een PWA-versie van SEPA Bestandsdokter 0.9.
+Na de eerste installatie via een HTTPS-webadres kan de app offline werken.
+De XML-bestanden worden in de browser op het eigen apparaat verwerkt; deze app
+stuurt de bankbestanden niet naar een server.
+
+BELANGRIJK
+- Voor installatie op Android, iPhone/iPad en moderne desktopbrowsers is een
+  eerste bezoek via een beveiligd HTTPS-webadres nodig.
+- Elk apparaat moet die eerste keer online worden geopend en geïnstalleerd.
+- Daarna kan de app zonder internet worden gestart, zolang de cache niet wordt
+  gewist en de browser de offline gegevens bewaart.
+- Deze map moet als geheel op een HTTPS-webserver worden geplaatst. Open
+  index.html niet rechtstreeks als lokaal bestand: service workers werken
+  daarvoor niet.
+- Deze ZIP is dus nog niet automatisch online gezet; er is nog een hostingstap.
+
+INSTALLEREN
+Android (Chrome): open de HTTPS-link, kies 'Installeren' of 'Toevoegen aan startscherm'.
+iPhone/iPad (Safari): open de HTTPS-link, tik op Deel en kies 'Zet op beginscherm'.
+Windows/macOS (Edge/Chrome): open de HTTPS-link en kies het installatie-icoon
+  in de adresbalk of via het browsermenu.
+
+OFFLINE CONTROLEREN
+Installeer de app terwijl internet beschikbaar is. Open hem daarna één keer,
+wacht tot de pagina volledig geladen is en test vervolgens met vliegtuigstand.
+Bewaar deze map ongewijzigd op de webserver.
+
+PRIVACY
+De PWA-bestanden bevatten de app en het logo. Er is geen servercode of
+bankverbinding toegevoegd. De verwerking blijft lokaal in de browser.
+De bank-specifieke controles blijven dezelfde als in versie 0.9 en garanderen
+niet dat een bank een bestand accepteert.
